@@ -46,7 +46,7 @@ navbar .navbar-nav .nav-link.active {
   width: 25px;
   height: 30px;
   background-repeat: no-repeat;
-  background-image: url(icons/cart-icon.png);
+  background-image: url(../icons/cart-icon.png);
   margin-right: 8px;
   color: #d0d0d6;
 }
@@ -90,11 +90,11 @@ navbar .navbar-nav .nav-link.active {
 }
 
 .carousel .prev-icon {
-  background-image: url(icons/prev-icon.png);
+  background-image: url(../icons/prev-icon.png);
 }
 
 .carousel .next-icon {
-  background-image: url(icons/next-icon.png);
+  background-image: url(../icons/next-icon.png);
 }
 
 .carousel-control-prev {
