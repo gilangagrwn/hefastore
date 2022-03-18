@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Hefa Store</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand" href="#">Hefa</a>
+          <ul class="navbar-nav mx-auto text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#designer">Designer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#brands">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <a href="/mycart.html" class="nav-link cart d-flex align-items-center justify-content-lg-end">
+            <div class="cart-icon"></div>
+            My Cart (<span>12</span>)
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Single Product -->
+    <section class="single-product">
+      <!-- Breadcrumb -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Single Product</li>
+          </ol>
+        </nav>
+        <!-- Akhir Breadcrumb -->
+        <div class="row">
+          <div class="col-md-6 col-lg-5 d-flex justify-content-center">
+            <figure class="figure">
+              <img src="/single-product/product/1.png" class="figure-img img-fluid" alt="..." />
+              <figcaption class="figure-caption thumbnail-product-container d-flex align-content-start justify-content-between">
+                <a href="#" class="thumbnail-product"><img src="/single-product/product-thumbnail/1.png" alt="" /></a>
+                <a href="#" class="thumbnail-product"><img src="/single-product/product-thumbnail/2.png" alt="" /></a>
+                <a href="#" class="thumbnail-product"><img src="/single-product/product-thumbnail/3.png" alt="" /></a>
+                <div class="play d-flex justify-content-center" style="width: 80px; height: 80px; background-color: #e3dddd">
+                  <a href="#" class="d-flex justify-content-center align-items-center flex-column">
+                    <img src="/single-product/product-thumbnail/play-icon.png" alt="" />
+                    <span class="text-uppercase">Play Video</span>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-5 col-lg-4 ms-md-3" style="margin-top: 0 !important">
+            <h6 class="product-title">Nadira Maxi</h6>
+            <p class="product-price">IDR 209.000</p>
+            <div class="quantity d-flex align-items-center">
+              <button type="button" class="btn btn-quantity btn-quantity-minus d-flex justify-content-center">
+                <img src="/icons/minus-icon.png" alt="" />
+              </button>
+              <span class="mx-2" style="color: #171717">20</span>
+              <button type="button" class="btn btn-quantity btn-quantity-plus d-flex justify-content-center">
+                <img src="/icons/plus-icon.png" alt="" />
+              </button>
+            </div>
+            <a href="/mycart.html" class="btn btn-add-cart d-flex align-items-center justify-content-center" role="button">Add to Cart</a>
+            <a href="#" class="btn btn-wish d-flex align-items-center justify-content-center" role="button">Add to Wishlist</a>
+            <hr />
+            <span style="font-weight: 200; color: #919191" class="design-by-caption">Designed by</span>
+            <div style="margin-top: 20px" class="design-by d-flex align-items-center">
+              <img style="padding: 5px; border-radius: 100%; border: 1px solid #1a258b; margin-right: 16px" src="/designer/design-by/1.png" />
+              <div style="color: #919191" class="designer-followers">
+                <p style="font-weight: 500; margin-bottom: 5px; color: #171717">Anne Mortgery</p>
+                <p class="mb-0"><span style="color: #171717; font-weight: 200">14.2K</span> Followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Description and Reviews -->
+    <section class="product-description">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item product-description-tabs" role="presentation">
+                <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab" aria-controls="desc" aria-selected="true">Product Description</button>
+              </li>
+              <li class="nav-item review-tabs" style="margin-left: -20px" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false">
+                  Reviews (<span style="color: #1abc9c !important; font-weight: 500">20</span>)
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade desc-content show active" id="desc" role="tabpanel" aria-labelledby="desc">
+                <p>Kami bekerja dalam berbagai program pemantauan untuk menjamin kepatuhan terhadap standar keselamatan, kesehatan, dan kualitas setiap produk kami.</p>
+                <p>4.20 adalah komunitas yang di dalamnya terdiri dari 3 divisi yaitu 4.20 Clothing, Fourtwnty Music dan 4.20 Society.</p>
+                <p style="margin-bottom: 0">Nikmatilah karya-karya dari kami, Happy 4.20!</p>
+              </div>
+              <div class="tab-pane fade review-content" id="review" role="tabpanel" aria-labelledby="review">
+                <div class="user-review-container d-flex flex-row align-items-center">
+                  <img src="/single-product/review/1.png" />
+                  <div class="user-review">
+                    <h5>Dian Nabila</h5>
+                    <p>Bagus bangeeeeeeeeet, gak nyesel beli produk ini!</p>
+                  </div>
+                </div>
+                <div class="user-review-container d-flex flex-row align-items-center">
+                  <img src="/single-product/review/2.png" />
+                  <div class="user-review">
+                    <h5>Gilang Anggriawan</h5>
+                    <p>Beli buat hadiah doi, katanya doi suka banget wkwkwk</p>
+                  </div>
+                </div>
+                <div class="user-review-container d-flex flex-row align-items-center" style="padding-bottom: 0">
+                  <img src="/single-product/review/3.png" />
+                  <div class="user-review">
+                    <h5>Hanifa</h5>
+                    <p>Pengirimannya cepet banget! Produknya bagus juga, sukakkkkkk</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Product Description and Reviews -->
+
+    <!-- Similar Product -->
+    <section class="similar">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>Similar Product</h3>
+            <p>Produk ini mungkin cocok buat kamu</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <figure class="figure">
+              <div class="figure-img-container">
+                <img src="/single-product/similar/1.png" class="figure-img img-fluid" />
+                <a href="#" class="d-flex justify-content-center"> <img src="/icons/plus_icon.png" class="align-self-center" /> </a>
+              </div>
+              <figcaption class="figure-caption">
+                <div class="row">
+                  <div class="col-12 col-sm-9 col-md-7">
+                    <h5>Heaven Lights</h5>
+                    <span class="d-block d-md-none">IDR 209.000</span>
+                    <span>Match 20%</span>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-end">
+                    <span class="d-none d-md-block">IDR 209.000</span>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="figure">
+              <div class="figure-img-container">
+                <img src="/single-product/similar/2.png" class="figure-img img-fluid" />
+                <a href="#" class="d-flex justify-content-center"> <img src="/icons/plus_icon.png" class="align-self-center" /> </a>
+              </div>
+              <figcaption class="figure-caption">
+                <div class="row">
+                  <div class="col-12 col-sm-9 col-md-7">
+                    <h5>Nibras Gamis</h5>
+                    <span class="d-block d-md-none">IDR 209.000</span>
+                    <span>Match 20%</span>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-end">
+                    <span class="d-none d-md-block">IDR 209.000</span>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="figure">
+              <div class="figure-img-container">
+                <img src="/single-product/similar/3.png" class="figure-img img-fluid" />
+                <a href="#" class="d-flex justify-content-center"> <img src="/icons/plus_icon.png" class="align-self-center" /> </a>
+              </div>
+              <figcaption class="figure-caption">
+                <div class="row">
+                  <div class="col-12 col-sm-9 col-md-7">
+                    <h5>Hana Tajima</h5>
+                    <span class="d-block d-md-none">IDR 209.000</span>
+                    <span>Match 20%</span>
+                  </div>
+                  <div class="col d-flex align-items-center justify-content-end">
+                    <span class="d-none d-md-block">IDR 209.000</span>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Similar Product -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-2 mb-1 order-2 order-sm-1">
+            <a class="navbar-brand" href="#">Hefa</a>
+          </div>
+          <div class="col-12 col-sm-5 offset-sm-5 justify-content-start justify-content-sm-end d-flex mb-3 order-1 order-sm-2">
+            <div class="socmed">
+              <a href="#" class="me-3"><img src="/socmed/facebook.png" alt="Facebook" /></a>
+              <a href="#" class="me-3"><img src="/socmed/twitter.png" alt="twitter" /></a>
+              <a href="#"><img src="/socmed/instagram.png" alt="instagram" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex align-items-baseline">
+          <div class="col col-sm-6 mb-3">
+            <p>All Rights reserved by <span>Hefa Store</span>. Copyright 2021.</p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <nav class="nav text-uppercase">
+              <a class="nav-link" href="#">Jobs</a>
+              <a class="nav-link" href="#">Developer</a>
+              <a class="nav-link" href="#">Terms</a>
+              <a class="nav-link" href="#">Privacy Policy</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Akhir Footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
