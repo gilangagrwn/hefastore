@@ -68,10 +68,6 @@ navbar .navbar-nav .nav-link.active {
   margin-top: 62px !important;
 }
 
-.carousel .carousel-item {
-  /* margin-top: 20px; */
-}
-
 .carousel h1 {
   font-family: "Lora";
   margin-bottom: 20px;
@@ -716,14 +712,6 @@ h6 {
 @media (max-width: 427px) {
   .single-product h6.product-title {
     margin-top: 30px !important;
-  }
-
-  .my-cart h6 {
-    /* margin-left: 30px !important; */
-  }
-
-  .my-cart span {
-    /* margin-left: 30px !important; */
   }
 }
 
