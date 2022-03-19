@@ -248,10 +248,6 @@ footer {
   padding-bottom: 70px;
 }
 
-footer .socmed a:hover img {
-  transform: scale(1.1);
-}
-
 footer p {
   color: #d0d0d6;
   font-size: 14px;
@@ -575,6 +571,18 @@ h6 {
 
   .carousel .carousel-control-next {
     display: none;
+  }
+
+  .features .figure-img-container a {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .features .figure-img-container a img {
+    display: none;
+  }
+
+  .features .figure-img-container img:hover {
+    filter: inherit;
   }
 
   .single-product {
