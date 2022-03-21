@@ -706,9 +706,12 @@ h6 {
     height: 24px !important;
   }
 
+  .my-cart .btn.btn-quantity img {
+    width: 12px;
+    height: 12px;
+  }
+
   .btn.btn-quantity-delete {
-    width: 35px !important;
-    height: 35px !important;
     margin-left: 12px !important;
   }
 
@@ -747,9 +750,14 @@ h6 {
 }
 
 .btn.btn-quantity {
-  width: 38px;
-  height: 38px;
+  width: 28px !important;
+  height: 28px !important;
   background-color: #cccccc;
+}
+
+.btn.btn-quantity img {
+  width: 1.2em;
+  height: 1.2em;
 }
 
 .btn.btn-quantity-minus:hover {
@@ -770,6 +778,10 @@ h6 {
 
 .btn.btn.btn-quantity-plus:active {
   filter: saturate(150%);
+}
+
+.btn.btn-quantity-delete {
+  background-color: #ff0707;
 }
 
 .btn.btn-quantity-delete:hover {
