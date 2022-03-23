@@ -74,7 +74,7 @@
                 <button type="button" class="btn btn-primary"><a href="#features">Get It Now</a></button>
               </div>
               <div class="col-sm-12 col-md-4 align-items-md-start justify-content-md-end d-md-flex">
-                <img src="slide/product-2.png" alt="Nadira Maxi" />
+                <img src="slide/product-2.png" alt="Nibras Gamis" />
               </div>
             </div>
           </div>
@@ -85,9 +85,7 @@
                 <p>Februari waktunya mengekspresikan diri dengan pakaian trendi</p>
                 <button type="button" class="btn btn-primary"><a href="#features">Get It Now</a></button>
               </div>
-              <div class="col-sm-12 col-md-4 align-items-md-start justify-content-md-end d-md-flex">
-                <img src="slide/product-4.png" alt="Nadira Maxi" />
-              </div>
+              <div class="col-sm-12 col-md-4 align-items-md-start justify-content-md-end d-md-flex"><img src="slide/product-4.png" alt="Hana Tajima" />a</div>
             </div>
           </div>
 
@@ -202,7 +200,7 @@
         </div>
         <div class="row mb-4">
           <div class="col-6 col-md-6 col-lg-3 justify-content-center d-flex">
-            <a href="#">
+            <a style="cursor: pointer">
               <figure class="figure text-center">
                 <div class="figure-image">
                   <img src="designer/1.png" class="figure-img img-fluid rounded-circle" style="max-height: 110px" />
@@ -215,7 +213,7 @@
             </a>
           </div>
           <div class="col-6 col-md-6 col-lg-3 justify-content-center d-flex">
-            <a href="#">
+            <a style="cursor: pointer">
               <figure class="figure text-center">
                 <div class="figure-image">
                   <img src="designer/2.png" class="figure-img img-fluid rounded-circle" style="max-height: 110px" />
@@ -228,7 +226,7 @@
             </a>
           </div>
           <div class="col-6 col-md-6 col-lg-3 justify-content-center d-flex">
-            <a href="#">
+            <a style="cursor: pointer">
               <figure class="figure text-center">
                 <div class="figure-image">
                   <img src="designer/3.png" class="figure-img img-fluid rounded-circle" style="max-height: 110px" />
@@ -241,7 +239,7 @@
             </a>
           </div>
           <div class="col-6 col-md-6 col-lg-3 justify-content-center d-flex">
-            <a href="#">
+            <a style="cursor: pointer">
               <figure class="figure text-center">
                 <div class="figure-image">
                   <img src="designer/4.png" class="figure-img img-fluid rounded-circle" style="max-height: 110px" />
@@ -256,7 +254,20 @@
         </div>
         <div class="row text-center">
           <div class="col">
-            <a style="color: #1a258b; cursor: pointer" class="see-all-designer">See all Our Designer</a>
+            <a style="color: #1a258b; cursor: pointer" class="see-all-designer" data-bs-toggle="modal" data-bs-target="#our-designer">See all Our Designer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade empty-site-modal rounded-0" id="our-designer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center p-md-5 pb-0">
+              <img src="/illustration/empty-site.png" class="img-fluid" />
+              <h3 class="mt-3">Oopsss</h3>
+              <p>Halaman ini belum tersedia</p>
+              <a class="mx-auto btn btn-wish d-flex justify-content-center align-items-center" data-bs-dismiss="modal" role="button">Back</a>
+            </div>
           </div>
         </div>
       </div>
@@ -304,6 +315,10 @@
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      // javascript: window.history.go(-1);
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

@@ -244,6 +244,11 @@ figcaption span {
   text-decoration: underline !important;
 }
 
+.empty-site-modal img {
+  width: 400px;
+  /* margin-left: -55px !important; */
+}
+
 /* Footer */
 
 footer {
